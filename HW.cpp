@@ -6,7 +6,7 @@ int main()
 {
     int a = 0;
     a++;
-    string testString = "lol";
+    string testString = "lol git mod";
     cout << a << endl;
     cout << ++a << endl;
     cout << "Hello World!" << endl;
