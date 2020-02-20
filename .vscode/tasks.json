@@ -1,0 +1,37 @@
+{
+    "version":"2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "/Users/draco892/Documents/Coding/C++_Test/HW.cpp",
+                "-o",
+                "${workspaceFolderBasename}"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "run",
+            "type": "shell",
+            "command": "./${workspaceFolderBasename}",
+            "dependsOn": [
+                "build"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "debug_build",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "/Users/draco892/Documents/Coding/C++_Test/HW.cpp",
+                "-o",
+                "${workspaceFolderBasename}_debug"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}
